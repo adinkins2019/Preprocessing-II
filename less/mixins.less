@@ -1,1 +1,15 @@
 // Mixins in here
+.makeRoundBorder(@borderSize, @borderType, @borderColor, @radius_size){
+    border: @borderSize @borderType @borderColor;
+    border-radius: @radius_size;
+    
+}
+
+.makeButton(@btnWidth; @bgColor; @txtColor; @fontSize: 1rem; @pad; @aligntext) {
+    width: @btnWidth;
+    background: @bgColor;
+    color: @txtColor;
+    font-size: @fontSize;
+    padding: @pad;
+    text-align: @aligntext;
+}
